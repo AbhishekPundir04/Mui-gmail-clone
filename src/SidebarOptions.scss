@@ -1,0 +1,25 @@
+.sideoptions-main {
+  display: flex !important;
+  align-items: center !important;
+  height: 35px !important;
+  border-top-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+  padding: 0px 25px !important;
+  margin-right: 20px !important;
+}
+
+.icons {
+  opacity: 0.5 !important;
+}
+
+.sidebarOptions h4 {
+  font-size: 14px !important;
+  flex: 1 !important;
+  margin-left: 10px !important;
+  font-weight: normal !important;
+}
+.sidebarOptions p {
+  opacity: 0 .5!important;
+  color: rgb(94, 94, 94) !important;
+  font-size: 12px !important;
+}

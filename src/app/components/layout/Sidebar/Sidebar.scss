@@ -1,0 +1,28 @@
+  .sidebar {
+    display: flex!important;
+    flex-direction: column!important;
+  }
+
+  .compose_button {
+    background-color: rgb(255, 255, 255) !important;
+    color: black !important;
+    border-radius: 40px !important;
+    box-shadow: 2px 2px 3px #ccc !important;
+    height: 56px !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    margin-left: 40px !important;
+    width: 150px !important;
+  }
+  .compose_button:hover {
+    background-color: rgb(249, 238, 238) !important;
+  }
+
+  .sideoptions-main h3 {
+    padding-left: 26px !important;
+    opacity: 0.5 !important;
+  }
+
+  .sideoptions-main{
+    
+  }

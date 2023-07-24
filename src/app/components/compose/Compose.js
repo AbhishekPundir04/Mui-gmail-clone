@@ -2,7 +2,7 @@ import React from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import OpenInFullIcon from "@mui/icons-material/OpenInFull";
 import RemoveIcon from "@mui/icons-material/Remove";
-import { Button, TextField } from "@mui/material";
+import { Button, IconButton, TextField } from "@mui/material";
 import FormatColorTextIcon from "@mui/icons-material/FormatColorText";
 import AttachFileIcon from "@mui/icons-material/AttachFile";
 import MoodIcon from "@mui/icons-material/Mood";
@@ -14,7 +14,10 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import DeleteIcon from "@mui/icons-material/Delete";
 
 import "./Compose.scss";
+import { useDispatch } from "react-redux";
+import { closeSendMessage } from "../../redux/features/mailSlice";
 const Compose = () => {
+  const dispatch = useDispatch()
   return (
     <div className="compose">
       <div className="compose__header">
@@ -24,7 +27,10 @@ const Compose = () => {
         <div className="compse_header_right">
           <RemoveIcon />
           <OpenInFullIcon />
-          <CloseIcon />
+         
+
+          <CloseIcon onClick={()=>dispatch(closeSendMessage())}/>
+        
         </div>
       </div>
       <div className="compose__body">

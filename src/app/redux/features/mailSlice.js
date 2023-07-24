@@ -1,32 +1,29 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-
+import { createSlice } from "@reduxjs/toolkit";
 
 export const mailSlice = createSlice({
-  name: 'mail',
-  initialState:{
-    sendMessageIsOpen:false
+  name: "mail",
+  initialState: {
+    sendMessageIsOpen: false,
   },
   reducers: {
     openSendMessage: (state) => {
-
-      state.sendMessageIsOpen=true
+      state.sendMessageIsOpen = true;
     },
     closeSendMessage: (state) => {
-      state.sendMessageIsOpen=false
+      state.sendMessageIsOpen = false;
     },
-   
   },
 
-//   extraReducers: (builder) => {
-//     builder
-//       .addCase(incrementAsync.pending, (state) => {
-//         state.status = 'loading';
-//       })
-//       .addCase(incrementAsync.fulfilled, (state, action) => {
-//         state.status = 'idle';
-//         state.value += action.payload;
-//       });
-//   },
+  //   extraReducers: (builder) => {
+  //     builder
+  //       .addCase(incrementAsync.pending, (state) => {
+  //         state.status = 'loading';
+  //       })
+  //       .addCase(incrementAsync.fulfilled, (state, action) => {
+  //         state.status = 'idle';
+  //         state.value += action.payload;
+  //       });
+  //   },
 });
 
 export const { openSendMessage, closeSendMessage } = mailSlice.actions;

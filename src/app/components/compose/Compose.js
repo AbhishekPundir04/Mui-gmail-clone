@@ -2,7 +2,7 @@ import React from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import OpenInFullIcon from "@mui/icons-material/OpenInFull";
 import RemoveIcon from "@mui/icons-material/Remove";
-import { Button, IconButton, TextField } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 import FormatColorTextIcon from "@mui/icons-material/FormatColorText";
 import AttachFileIcon from "@mui/icons-material/AttachFile";
 import MoodIcon from "@mui/icons-material/Mood";

@@ -1,0 +1,39 @@
+.emailbodyhead_main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid whitesmoke;
+  padding: 0px 12px;
+}
+.emailbodyhead_left {
+  display: flex;
+  align-items: center;
+}
+.emailbodyhead_main svg {
+  font-size: 20px;
+}
+
+.emaildetail_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.emaildetail_left {
+  display: flex;
+  align-items: center;
+}
+.emaildetail_left h4{
+   padding-left: 10px;
+  }
+.emaildetail_right {
+  display: flex;
+  align-items: center;
+}
+.emaildetail_header svg {
+  font-size: 20px;
+}
+
+.emaildetails_body{
+    display: flex;
+    padding: 0px 15px;
+}

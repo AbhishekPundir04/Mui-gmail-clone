@@ -32,18 +32,18 @@ const Sidebar = () => {
         number={200}
         isActive={true}
       />
-      <SidebarOptions Icon={WatchLaterIcon} title="Snoozed" number={100} />
-      <SidebarOptions Icon={GradeIcon} title="Starred" number={200} />
+      <SidebarOptions Icon={WatchLaterIcon} title="Snoozed" />
+      <SidebarOptions Icon={GradeIcon} title="Starred" />
       <SidebarOptions
         Icon={LabelImportantIcon}
         title="Important"
-        number={200}
+        
       />
-      <SidebarOptions Icon={DraftsIcon} title="Sent" number={200} />
-      <SidebarOptions Icon={SendIcon} title="Draft" number={200} />
-      <SidebarOptions Icon={CategoryIcon} title="Category" number={200} />
-      <SidebarOptions Icon={VideocamIcon} title="Meeting" number={200} />
-      <SidebarOptions Icon={KeyboardIcon} title="Join a Meeting" number={200} />
+      <SidebarOptions Icon={DraftsIcon} title="Sent"  />
+      <SidebarOptions Icon={SendIcon} title="Draft"  />
+      <SidebarOptions Icon={CategoryIcon} title="Category" />
+      <SidebarOptions Icon={VideocamIcon} title="Meeting"  />
+      <SidebarOptions Icon={KeyboardIcon} title="Join a Meeting"/>
     </div>
   );
 };

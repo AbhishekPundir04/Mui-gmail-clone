@@ -1,0 +1,28 @@
+.login_wrapper {
+  display: flex;
+  align-items: center !important;
+  justify-content: center;
+  height: 90vh;
+  
+
+}
+
+.login {
+    background-color: whitesmoke;
+    padding: 100px;
+  display: flex;
+  flex-direction: column !important;
+}
+
+.login_wrapper img {
+  width: 250px !important;
+}
+
+.login_wrapper Button {
+    margin-top: 70px;
+    font-size: 15px;
+    padding: 15px 30px;
+    border-radius:10px;
+    width: 250px;
+  }
+

@@ -1,4 +1,5 @@
 .compose {
+  z-index: 1000!important;
   position: absolute;
   bottom: 0;
   min-width: 800px !important;
@@ -57,4 +58,8 @@ textarea {
 .compose_footer_right svg:hover{
   background-color: #eee;
   cursor: pointer;
+}
+
+.text-field-1{
+  z-index: 10000!important;
 }

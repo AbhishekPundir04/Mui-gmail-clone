@@ -4,6 +4,7 @@ export const mailSlice = createSlice({
   name: "mail",
   initialState: {
     sendMessageIsOpen: false,
+    selectedMessage: null,
   },
   reducers: {
     openSendMessage: (state) => {
@@ -12,22 +13,16 @@ export const mailSlice = createSlice({
     closeSendMessage: (state) => {
       state.sendMessageIsOpen = false;
     },
+    openMessage: (state, action) => {
+      state.selectedMessage = action.payload;
+    },
   },
-
-  //   extraReducers: (builder) => {
-  //     builder
-  //       .addCase(incrementAsync.pending, (state) => {
-  //         state.status = 'loading';
-  //       })
-  //       .addCase(incrementAsync.fulfilled, (state, action) => {
-  //         state.status = 'idle';
-  //         state.value += action.payload;
-  //       });
-  //   },
 });
 
-export const { openSendMessage, closeSendMessage } = mailSlice.actions;
+export const { openSendMessage, closeSendMessage, openMessage } = mailSlice.actions;
 
 export const selectSendMessageIsOpen = (state) => state.mail.sendMessageIsOpen;
+
+export const selectedMail = (state) => state.mail.selectedMessage;
 
 export default mailSlice.reducer;

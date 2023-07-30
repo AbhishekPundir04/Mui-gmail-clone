@@ -1,5 +1,6 @@
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/firestore';
+import firebase from "firebase/compat/app";
+import "firebase/compat/firestore";
+import "firebase/compat/auth";
 
 const firebaseConfig = {
   apiKey: "AIzaSyB2MiNaRtjLtXTFLr0CY-3KIRB3jJb3dCA",
@@ -8,16 +9,19 @@ const firebaseConfig = {
   storageBucket: "clone-with-react-85303.appspot.com",
   messagingSenderId: "902873947988",
   appId: "1:902873947988:web:a90449d5e58c50973f72c1",
-  measurementId: "G-S55PZ4PH53"
+  measurementId: "G-S55PZ4PH53",
 };
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.firestore();
+const auth = firebase.auth();
+const provider = new firebase.auth.GoogleAuthProvider();
 
-export { db };
+export { db, auth, provider };
 
+// import { initializeApp } from 'firebase/app';
+// import { getFirestore } from 'firebase/firestore';
+// import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 
-
-// import firebase from 'firebase'
 // const firebaseConfig = {
 //   apiKey: "AIzaSyB2MiNaRtjLtXTFLr0CY-3KIRB3jJb3dCA",
 //   authDomain: "clone-with-react-85303.firebaseapp.com",
@@ -27,8 +31,9 @@ export { db };
 //   appId: "1:902873947988:web:a90449d5e58c50973f72c1",
 //   measurementId: "G-S55PZ4PH53"
 // };
+// const firebaseApp = initializeApp(firebaseConfig);
+// const db = getFirestore();
+// const auth = getAuth();
+// const provider = new GoogleAuthProvider();
 
-// const firebaseApp = firebase.initializeApp(firebaseConfig);
-// const db = firebaseApp.firestore();
-
-// export { db };
+// export { db, auth, provider };

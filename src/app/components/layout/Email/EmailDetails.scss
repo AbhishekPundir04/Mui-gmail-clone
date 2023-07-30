@@ -22,9 +22,9 @@
   display: flex;
   align-items: center;
 }
-.emaildetail_left h4{
-   padding-left: 10px;
-  }
+.emaildetail_left h4 {
+  padding-left: 10px;
+}
 .emaildetail_right {
   display: flex;
   align-items: center;
@@ -33,7 +33,13 @@
   font-size: 20px;
 }
 
-.emaildetails_body{
-    display: flex;
-    padding: 0px 15px;
+.emaildetails_body {
+  display: flex;
+  padding: 0px 15px;
 }
+.emaildetail_msg {
+  box-shadow: 0px 0px 3px #ccc;
+  height: 100%;
+}
+
+

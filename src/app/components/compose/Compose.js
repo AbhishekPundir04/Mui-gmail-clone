@@ -69,6 +69,7 @@ const Compose = () => {
               placeholder="To"
               value={to}
               onChange={(e) => setTo(e.target.value)}
+              className="text-field-1"
             />
             <TextField
               fullWidth

@@ -48,7 +48,7 @@ const EmailDetails = () => {
       <div className="emaildetail_msg">
         <div className="emailbodyhead_main">
           <div className="emailbodyhead_left">
-            <h4>{mail.subject}</h4>
+            <h4>{mail?.subject}</h4>
             <IconButton>
               <LabelImportantIcon />
             </IconButton>
@@ -61,8 +61,8 @@ const EmailDetails = () => {
         <div className="emaildetail_header">
           <div className="emaildetail_left">
             <Avatar />
-            <h4>{mail.subject}</h4>
-            <p>{mail.name}</p>
+            <h4>{mail?.name}</h4>
+            <p>{mail.email}</p>
           </div>
           <div className="emaildetail_right">
             <p>{mail.time}</p>

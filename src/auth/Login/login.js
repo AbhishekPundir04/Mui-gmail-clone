@@ -1,15 +1,29 @@
 import React from "react";
 import "./login.scss";
 import { Button } from "@mui/material";
-import {auth, provider } from "../../app/firebase/firebase";
+import { auth, provider } from "../../app/firebase/firebase";
+import { useDispatch } from "react-redux";
+import { signin } from "../../app/redux/features/userSlice";
 
 const Login = () => {
+  const dispatch = useDispatch();
 
-  const login = ()=>{
-    auth.signInWithPopup(provider).then(({user})=>{
-      console.log(user)
-    })
-  }
+  const login = () => {
+    auth
+      .signInWithPopup(provider)
+      .then(({ user }) => {
+        dispatch(
+          signin({
+            displayName: user.displayName,
+            photoUrl: user.photoURL,
+            email: user.email,
+          })
+        );
+      })
+      .catch((error) => {
+        alert(error);
+      });
+  };
   return (
     <div className="login_wrapper">
       <div className="login">

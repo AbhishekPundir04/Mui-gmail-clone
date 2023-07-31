@@ -6,9 +6,12 @@ import { ArrowDropDown, Search } from "@mui/icons-material";
 import HelpIcon from "@mui/icons-material/Help";
 import SettingsIcon from "@mui/icons-material/Settings";
 import AppsIcon from "@mui/icons-material/Apps";
-import profilepic from "../../../../assets/images/profilepic.jpg";
+import { useSelector } from "react-redux";
+import { selectUser } from "../../../redux/features/userSlice";
 
 const Header = () => {
+  const user = useSelector(selectUser)
+  console.log(user.photoUrl)
   return (
     <div className="main">
       <div className="header-first">
@@ -44,7 +47,8 @@ const Header = () => {
             <AppsIcon />
           </IconButton>
           <IconButton>
-            <Avatar src={profilepic} />
+            <Avatar src={user?.photoUrl} onClick={()=>{
+            }} />
           </IconButton>
         </div>
       </div>

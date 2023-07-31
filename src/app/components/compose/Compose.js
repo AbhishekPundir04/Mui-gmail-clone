@@ -16,14 +16,16 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
 
 import "./Compose.scss";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { closeSendMessage } from "../../redux/features/mailSlice";
 import { db } from "../../firebase/firebase";
+import { selectUser } from "../../redux/features/userSlice";
 const Compose = () => {
   const [to, setTo] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const dispatch = useDispatch();
+  const user = useSelector(selectUser);
 
   const handlerSubmit = (e) => {
     e.preventDefault();
@@ -39,6 +41,8 @@ const Compose = () => {
       to,
       subject,
       message,
+      from: user.email,
+      fromName: user.displayName,
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
     setTo("");

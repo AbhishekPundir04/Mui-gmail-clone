@@ -17,23 +17,3 @@ const auth = firebase.auth();
 const provider = new firebase.auth.GoogleAuthProvider();
 
 export { db, auth, provider };
-
-// import { initializeApp } from 'firebase/app';
-// import { getFirestore } from 'firebase/firestore';
-// import { getAuth, GoogleAuthProvider } from 'firebase/auth';
-
-// const firebaseConfig = {
-//   apiKey: "AIzaSyB2MiNaRtjLtXTFLr0CY-3KIRB3jJb3dCA",
-//   authDomain: "clone-with-react-85303.firebaseapp.com",
-//   projectId: "clone-with-react-85303",
-//   storageBucket: "clone-with-react-85303.appspot.com",
-//   messagingSenderId: "902873947988",
-//   appId: "1:902873947988:web:a90449d5e58c50973f72c1",
-//   measurementId: "G-S55PZ4PH53"
-// };
-// const firebaseApp = initializeApp(firebaseConfig);
-// const db = getFirestore();
-// const auth = getAuth();
-// const provider = new GoogleAuthProvider();
-
-// export { db, auth, provider };
